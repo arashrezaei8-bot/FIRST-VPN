@@ -1,1 +1,65 @@
-app/src/main/res/layout/activity_main.xml
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp"
+    android:background="#F7F8FA">
+
+    <TextView
+        android:id="@+id/logoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/company"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/not_connected"
+        android:textSize="18sp"
+        android:layout_marginTop="45dp"/>
+
+    <Button
+        android:id="@+id/connectButton"
+        android:layout_width="220dp"
+        android:layout_height="65dp"
+        android:text="@string/connect"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_server"
+        android:textSize="16sp"
+        android:layout_marginTop="40dp"/>
+
+    <Spinner
+        android:id="@+id/serverSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/adPlaceholder"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:text="@string/ad_placeholder"
+        android:layout_marginTop="40dp"/>
+
+</LinearLayout>
