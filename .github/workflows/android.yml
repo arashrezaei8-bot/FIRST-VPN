@@ -17,13 +17,16 @@ jobs:
           distribution: temurin
           java-version: '17'
 
-      - name: Setup Gradle
-        uses: gradle/actions/setup-gradle@v4
-        with:
-          gradle-version: '8.10'
+      - name: Check project
+        run: |
+          echo "=== PROJECT FILES ==="
+          find . -maxdepth 5 -type f | sort
+          echo "=== GRADLE VERSION ==="
+          gradle --version
 
       - name: Build APK
-        run: gradle --stacktrace assembleDebug
+        run: |
+          gradle --stacktrace --info assembleDebug
 
       - name: Upload APK
         if: success()
