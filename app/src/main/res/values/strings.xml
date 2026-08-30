@@ -1,1 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
 
+<resources>
+
+    <string name="app_name">FIRST VPN</string>
+
+    <string name="company">GILDOR Group</string>
+
+    <string name="not_connected">Not Connected</string>
+
+    <string name="connected">Connected</string>
+
+    <string name="connect">CONNECT</string>
+
+    <string name="disconnect">DISCONNECT</string>
+
+    <string name="select_server">Select Server</string>
+
+    <string name="ad_placeholder">ADVERTISEMENT</string>
+
+</resources>
